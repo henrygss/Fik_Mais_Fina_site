@@ -5,28 +5,21 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://seusite.com"), // troque pela URL real
+  metadataBase: new URL("https://fik-mais-fina-site.vercel.app"),
+
   title: "Fik Mais Fina | Produtos naturais para emagrecimento",
   description:
     "Produtos selecionados para apoiar seu bem-estar e equilíbrio. Atendimento rápido e seguro via WhatsApp.",
 
   openGraph: {
     title: "Fik Mais Fina",
-    description: "Produtos naturais para apoiar seu bem-estar e equilíbrio.",
-    url: "https://seusite.com",
+    description:
+      "Produtos naturais para apoiar seu bem-estar e equilíbrio.",
     siteName: "Fik Mais Fina",
-    images: [
-      {
-        url: "/logo.jpeg",
-        width: 800,
-        height: 600,
-        alt: "Fik Mais Fina",
-      },
-    ],
     locale: "pt_BR",
     type: "website",
   },
-};
+};  
 
 export default function RootLayout({
   children,
