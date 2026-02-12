@@ -10,19 +10,32 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params; // ✅ unwrap do params Promise
-  const slugFromUrl = decodeURIComponent(slug).trim();
+import type { Metadata } from "next";
 
-  const product = products.find((p) => p.slug.trim() === slugFromUrl);
+export async function generateMetadata(
+  { params }: { params: { slug: string } }
+): Promise<Metadata> {
+  const { slug } = params;
 
-  if (!product) {
-    return {
-      title: "Produto não encontrado | Fik Mais Fina",
-      description: `Não encontramos o produto: ${slugFromUrl}`,
-      metadataBase: new URL(siteUrl),
-    };
-  }
+  const title = `${slug} | Fik Mais Fina`;
+  const description = "Veja detalhes do produto e compre via WhatsApp.";
+  const image = `/produtos/${slug}.jpeg`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      images: [{ url: image, width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      images: [image],
+    },
+  };
+}
 
   const title = `${product.name} | Fik Mais Fina`;
   const description =
