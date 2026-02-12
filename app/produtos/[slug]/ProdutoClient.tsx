@@ -62,10 +62,12 @@ export default function ProdutoClient() {
     "Tenho interesse neste produto:",
     `Produto: ${product.name}`,
     `Preço: ${product.price}`,
-   // productUrl ? `Link: ${productUrl}` : "",
+    productUrl ? `Link: ${productUrl}` : "",
     "",
     "Pode me informar prazo de entrega e formas de pagamento?"
-  ].filter(Boolean).join("\n");
+  ]
+    .filter(Boolean)
+    .join("\n");
 
 
 
