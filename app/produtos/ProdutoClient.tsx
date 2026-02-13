@@ -4,9 +4,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { products } from "../../../data/products";
-import { WhatsAppButton } from "../../../components/WhatsAppButton";
-import { ProductGallery } from "../../../components/ProductGallery";
+import { products } from "../../data/products";
+import { WhatsAppButton } from "../../components/WhatsAppButton";
+import { ProductGallery } from "../../components/ProductGallery";
 import { useEffect, useState } from "react";
 
 
