@@ -2,21 +2,20 @@ import type { Metadata } from "next";
 import ProdutoClient from "./ProdutoClient";
 import { products } from "../../../data/products";
 
-type Props = {
-  params: { slug: string };
-};
+type Props = { params: { slug: string } };
+
+const norm = (v: unknown) => String(v ?? "").trim().toLowerCase();
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = params;
+  const slug = params?.slug; // aqui a gente garante que existe
 
-  const product = products.find((p) => p.slug === slug);
+  const product = products.find((p) => norm(p.slug) === norm(slug));
 
-  // Fallback se não achar produto (evita crash)
+  // Fallback (mostra o slug que chegou)
   if (!product) {
-    const title = "Produto | Fik Mais Fina";
+    const title = `Produto (${slug ?? "SEM-SLUG"}) | Fik Mais Fina`;
     const description = "Produtos naturais para apoiar seu bem-estar.";
-    const image = "/og-default.jpg"; // coloque um fallback em /public
-
+    const image = `/produtos/${slug ?? "produto-1"}.jpeg`; // tenta pelo slug
     return {
       title,
       description,
@@ -26,10 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         type: "website",
         images: [{ url: image, width: 1200, height: 630 }],
       },
-      twitter: {
-        card: "summary_large_image",
-        images: [image],
-      },
+      twitter: { card: "summary_large_image", images: [image] },
     };
   }
 
@@ -37,9 +33,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description =
     product.shortDescription ?? "Bem-estar e equilíbrio no seu ritmo.";
 
-  // IMPORTANTE: usar caminho relativo (/public/...)
-  // Ex: product.image = "/produtos/produto-1.jpeg"
-  const image = product.image || `/produtos/${slug}.jpeg`;
+  const image = product.image?.startsWith("/")
+    ? product.image
+    : `/produtos/${product.slug}.jpeg`;
 
   return {
     title,
