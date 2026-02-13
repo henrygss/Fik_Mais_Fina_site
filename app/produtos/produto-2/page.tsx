@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/produtos/produto-1.jpeg"],
+    images: ["/produtos/produto-2.jpeg"],
   },
 };
 
