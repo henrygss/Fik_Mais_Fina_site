@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import ProdutoClient from "../ProdutoClient";
 
 export const metadata: Metadata = {
-  title: "Xtreme Slim | Fik Mais Fina",
-  description: "O Xtreme Slim é um forte inibidor de apetite...",
+  title: "MultiSlim Black | Fik Mais Fina",
+  description: "O MultiSlim Black é um composto ultra concentrado de ervas...",
   openGraph: {
-    title: "Xtreme Slim | Fik Mais Fina",
-    description: "O Xtreme Slim é um forte inibidor de apetite...",
-    images: [{ url: "/produtos/produto-1.jpeg", width: 1200, height: 630 }],
+    title: "MultiSlim Black | Fik Mais Fina",
+    description: "O MultiSlim Black é um composto ultra concentrado de ervas...",
+    images: [{ url: "/produtos/produto-2.jpeg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",

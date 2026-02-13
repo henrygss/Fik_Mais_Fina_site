@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import ProdutoClient from "../ProdutoClient";
 
 export const metadata: Metadata = {
-  title: "Xtreme Slim | Fik Mais Fina",
-  description: "O Xtreme Slim é um forte inibidor de apetite...",
+  title: "Diet + Stronger | Fik Mais Fina",
+  description: "O DIET+ Stronger é um suplemento alimentar indicado...",
   openGraph: {
-    title: "Xtreme Slim | Fik Mais Fina",
-    description: "O Xtreme Slim é um forte inibidor de apetite...",
-    images: [{ url: "/produtos/produto-1.jpeg", width: 1200, height: 630 }],
+    title: "Diet + Stronger | Fik Mais Fina",
+    description: "O DIET+ Stronger é um suplemento alimentar indicado...",
+    images: [{ url: "/produtos/produto-3.jpeg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
