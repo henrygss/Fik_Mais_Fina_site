@@ -3,34 +3,16 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useParams } from "next/navigation";
 import { products } from "../../data/products";
 import { WhatsAppButton } from "../../components/WhatsAppButton";
 import { ProductGallery } from "../../components/ProductGallery";
 import { useEffect, useState } from "react";
 
 
-export default function ProdutoClient() {
-  const params = useParams();
-  const slugParam = (params as any)?.slug;
-  const slug = Array.isArray(slugParam) ? slugParam[0] : slugParam;
-
-  console.log("SLUG DA URL:", slug);
-  console.log("SLUGS DISPONÍVEIS:", products.map((p) => p.slug));
+export default function ProdutoClient({ slug }: { slug: string }) {
 
 
-  if (!slug) {
-    return (
-      <main className="mx-auto max-w-6xl px-6 py-12">
-        <h1 className="text-xl font-bold">Slug não chegou ❌</h1>
-        <Link href="/produtos" className="text-sm text-gray-600 hover:text-gray-900">
-          ← Voltar
-        </Link>
-      </main>
-    );
-  }
-
-  const product = products.find((p) => p.slug === String(slug).trim());
+const product = products.find((p) => p.slug === String(slug).trim());
 
 
   if (!product) {

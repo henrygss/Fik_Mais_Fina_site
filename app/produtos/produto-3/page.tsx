@@ -16,5 +16,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <ProdutoClient />;
+  return <ProdutoClient slug="produto-3" />;
 }
