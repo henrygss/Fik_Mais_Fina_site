@@ -35,7 +35,9 @@ const product = products.find((p) => p.slug === String(slug).trim());
   const [productUrl, setProductUrl] = useState("");
 
   useEffect(() => {
-    setProductUrl(window.location.href);
+    const url = new URL(window.location.href);
+    url.searchParams.set("wa", Date.now().toString());
+    setProductUrl(url.toString());
   }, []);
 
   const waMessage = [
