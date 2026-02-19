@@ -43,7 +43,12 @@ export const products: Product[] = [
       "Reduz a gordura localizada e evita o acúmulo de novas gorduras. Regula o intestino, pois possui fibras em sua fórmula e controla a ansiedade pela sua ação calmante. Aumenta os níveis de energia. Tem ação diurética e é coadjuvante no retardo do envelhecimento da pele. Dá maior firmeza à pele e melhora a aparência das celulites por conter colágeno em sua fórmula.",
 
     composition: [
-           "Garcinia, Cambogia, Cafeína, Hibisco, Chia, Colágeno, Caralluma, Glucomanan, Psyllium, Linhaça, Folha de lótus, Semente de Cássia, Folha de Amora, Laranja, Laranja amarga e Jobstears"
+           "Garcinia, Caralluma, Glucomanan e Psyllium: Reduzem o apetite naturalmente;",
+           "Cafeína e Laranja Amarga: Ação termogénica e estimulante;",
+           "Hibisco, Laranja, Folha de Amora e Folha de Lótus: Antioxidantes e reguladores da pressão e colesterol;",
+           "Chia, Linhaça e Colágeno: Melhoram a pele, cabelo, saciedade e trânsito intestinal;",
+           "Semente de Cássia: Laxante e bloqueador de gorduras;",
+           "Jobstears: geralmente utilizada como diurético e anti-inflamatório.",
     ],
 
     howToUse: [
@@ -111,7 +116,16 @@ export const products: Product[] = [
       " Reduz o apetite. Queima gordura localizada. Melhora a função intestinal. Combate a flacidez e celulites. Auxilia no controle do colesterol. Auxilia no fortalecimento imunológico",
 
     composition: [
-        "Broto de Bambu, Folha de Lótus, Cafeína, Hibisco, Colágeno, Spirulina, Psyllium, Garcinia, Sene, Xi Xian Cao e Chlorella"
+        "Folha de Lótus: Ação anti-inflamatória e antioxidante, regula a pressão arterial e fortalece o sistema imunitário;",
+        "Cafeína: Estimulante cerebral, termogênico e melhora o humor;",
+        "Hibisco: Antioxidante, cardioprotetor, reduz colesterol, triglicerídeos e ajuda no emagrecimento;",
+        "Colágeno: Fortalece pele, unhas, articulações e combate a flacidez com o envelhecimento;",
+        "Spirulina: Alga nutritiva, antioxidante, fortalece o sistema imune e reduz o apetite;",
+        "Psyllium: Laxante natural, rico em fibras, regula o intestino e aumenta a saciedade;",
+        "Garcinia: Reduz o apetite e controla a formação de gordura corporal;",
+        "Sene: Planta laxativa que também ajuda a reduzir o apetite;",
+        "Xi Xian Cao: Erva asiática anti-inflamatória, imunoestimulante e antimicrobiana;",
+        "Chlorella: Alga rica em nutrientes e clorofila, fortalece o sistema imune, ajuda na digestão e emagrecimento.",
     ],
 
     howToUse: [
@@ -177,7 +191,20 @@ export const products: Product[] = [
           "O seu Mix de ervas, extratos, raízes e grãos possuem a ação de inibir o apetite e acelerar o metabolismo em até 30%, contribuindo com uma perda de peso semanal de até 3 quilos. Melhora a aparência da pele devido sua ação antioxidante e suplementa a alimentação com aminoácidos essenciais e confere mais disposição energética. Os efeitos são sentidos na primeira semana!",
 
         composition: [
-            "Chia, Garcinia, Colágeno, Maracujá, Gengibre, Psyllium, Maca Peruana, Spirulina, Hibisco e Broto de Bambu."
+            "Garcinia Cambogia: Reduz o apetite e regula a lipogénese;",
+            "Colágeno: Fortalece pele, unhas, cabelo e articulações;",
+            "Linhaça: Rica em ômega 3, melhora a saciedade e o trânsito intestinal;",
+            "Alcachofra: Ajuda a reduzir o colesterol e regula o açúcar no sangue;",
+            "Abacaxi: Diurético natural, melhora a digestão e a pele;",
+            "Aloe Vera: Laxante natural, estimula o intestino;",
+            "Marmelo: Ação calmante, controla a ansiedade alimentar;",
+            "Limão: Detoxificante, rico em vitamina C;",
+            "Chia: Estimula o colágeno e acelera os movimentos intestinais;",
+            "Gengibre: Termogênico, queima de gordura e redução do apetite;",
+            "Psyllium: Laxante natural, promove saciedade;",
+            "Maca Peruana: Aumenta a energia, libido e saúde mental;",
+            "Caralluma: Supressor natural do apetite;",
+            "Maracujá: Calmante natural, reduz ansiedade.",
         ],
 
         howToUse: [
