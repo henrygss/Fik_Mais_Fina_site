@@ -30,6 +30,60 @@ export default function Home() {
         </div>
       </section>
 
+
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+
+            {/* FOTO */}
+            <div className="flex justify-center lg:justify-start">
+              <div className="relative h-80 w-80 overflow-hidden rounded-2xl shadow-lg">
+                <img
+                  src="/fundadora.jpeg"
+                  alt="Fundadora da Fik Mais Fina"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+
+            {/* TEXTO */}
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900">
+                Quem está por trás da Fik Mais Fina
+              </h2>
+
+              <p className="mt-6 text-gray-700 leading-relaxed">
+                Olá, sou <strong>Nome da Sua Mãe</strong>, responsável pelo atendimento
+                e curadoria dos produtos da Fik Mais Fina.
+              </p>
+
+              <p className="mt-4 text-gray-700 leading-relaxed">
+                Meu objetivo é oferecer produtos naturais de qualidade, com
+                atendimento próximo e personalizado via WhatsApp, ajudando cada
+                cliente a encontrar a melhor opção para o seu bem-estar.
+              </p>
+
+              <p className="mt-4 text-gray-700 leading-relaxed">
+                Aqui você fala diretamente comigo, com transparência,
+                atenção e compromisso.
+              </p>
+
+              <div className="mt-6">
+                <a
+                  href="https://wa.me/553584261566"
+                  target="_blank"
+                  className="inline-block rounded-xl bg-green-600 px-6 py-3 text-white font-semibold shadow hover:bg-green-700 transition"
+                >
+                  Falar comigo no WhatsApp
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
       {/* PRODUTOS (3 CARDS) */}
       <section className="mt-12">
         <div className="flex items-end justify-between gap-4">
