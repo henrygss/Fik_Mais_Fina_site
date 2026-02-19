@@ -53,7 +53,7 @@ export default function Home() {
               </h2>
 
               <p className="mt-6 text-gray-700 leading-relaxed">
-                Olá, sou <strong>Nome da Sua Mãe</strong>, responsável pelo atendimento
+                Olá, sou a <strong>Laisa</strong>, responsável pelo atendimento
                 e curadoria dos produtos da Fik Mais Fina.
               </p>
 
