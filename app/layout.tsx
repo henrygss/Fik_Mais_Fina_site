@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   title: "Fik Mais Fina | Produtos naturais para emagrecimento",
   description:
     "Produtos selecionados para apoiar seu bem-estar e equilíbrio. Atendimento rápido e seguro via WhatsApp.",
-     verification: {
-        google: "8LBJG_RJ6qYXf_FEt9z1NXOt4--NY5oriwPj3UNy0IM",
-      },
+  verification: {
+    google: "8LBJG_RJ6qYXf_FEt9z1NXOt4--NY5oriwPj3UNy0IM",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
